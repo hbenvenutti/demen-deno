@@ -1,0 +1,19 @@
+{
+  "name": "deno-demen",
+  "version": "0.0.1",
+  "description": "Port of demen from Node to Deno.",
+  "main": "index.js",
+  "author": "Huam Benvenutti",
+  "license": "Unlicensed",
+  "prisma": {
+    "schema": "src/shared/infra/database/prisma/schema.prisma"
+  },
+  "scripts": {
+    "prisma:init": "deno run --allow-read --allow-env --allow-write npm:prisma@latest init",
+    "prisma:format": "",
+    "prisma:migrate": "",
+    "prisma:generate": "deno run --allow-all npm:prisma@latest generate",
+    "prisma:deploy": "deno run npm:prisma@latest db push"
+  }
+
+}
