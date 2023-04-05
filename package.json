@@ -14,6 +14,8 @@
     "prisma:migrate": "",
     "prisma:generate": "deno run --allow-all npm:prisma@latest generate",
     "prisma:deploy": "deno run npm:prisma@latest db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.12.0"
   }
-
 }

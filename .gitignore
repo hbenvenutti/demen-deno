@@ -1,5 +1,8 @@
 # DemEn
 
+# prisma
+generated/
+
 # Drawio
 *.bkp
 
